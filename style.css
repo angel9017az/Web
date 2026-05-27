@@ -1,0 +1,358 @@
+/* =========================
+   BASE
+========================= */
+body {
+  cursor: none;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:
+  linear-gradient(
+    to bottom,
+    #050816,
+    #0b1030,
+    #050816
+  );
+
+  color: white;
+}
+
+/* =========================
+   MENU SUPERIOR
+========================= */
+.top-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 20px;
+  z-index: 1000;
+
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* BOTONES */
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+  text-decoration: none;
+
+  padding: 18px 30px;
+
+  border: 2px solid #7d2cff;
+  border-radius: 14px;
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+
+  box-shadow:
+    0 0 15px rgba(125,44,255,0.6);
+
+  transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.nav-btn:hover {
+  transform: translateY(-4px);
+
+  border-color: #00d9ff;
+
+  box-shadow:
+    0 0 20px #00d9ff,
+    0 0 40px rgba(0,217,255,0.4);
+}
+
+/* TEXTO BOTONES */
+.nav-btn span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   TITULO GRANDE
+========================= */
+.hero {
+  text-align: center;
+  padding-top: 180px;
+}
+
+.hero h1 {
+  font-size: 100px;
+  margin: 0;
+
+  text-transform: uppercase;
+
+  color: white;
+
+  text-shadow:
+    0 0 15px #00e5ff,
+    0 0 30px #7d2cff;
+}
+
+.hero h2 {
+  margin: 0;
+
+  font-size: 50px;
+
+  color: #8c52ff;
+
+  letter-spacing: 15px;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: #cfcfcf;
+  letter-spacing: 4px;
+}
+
+/* BOTON */
+.hero button {
+  margin-top: 30px;
+
+  padding: 18px 40px;
+
+  border: none;
+  border-radius: 15px;
+
+  color: white;
+  font-size: 18px;
+
+  cursor: pointer;
+
+  background:
+  linear-gradient(
+    90deg,
+    #00d9ff,
+    #7d2cff
+  );
+
+  box-shadow:
+    0 0 20px rgba(0,217,255,0.6);
+
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+section {
+  text-align: center;
+  ;
+}
+/* CONTENEDOR DE CADA SECCION */
+.section-box {
+  margin: 60px auto;
+  padding: 40px;
+
+  width: 85%;
+  max-width: 1200px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+    0 0 20px rgba(0,229,255,0.08);
+}
+
+/* TITULOS */
+.section-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* TARJETAS */
+.card {
+  background: rgba(255,255,255,0.05);
+
+  padding: 20px;
+  margin-top: 20px;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.3s;
+}
+
+/* EFECTO */
+.card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 0 20px rgba(0,229,255,0.2);
+}
+/* CURSOR PERSONALIZADO */
+.cursor {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+
+  z-index: 9999;
+
+  background:
+  radial-gradient(
+    circle,
+    #00e5ff,
+    #8c52ff
+  );
+
+  box-shadow:
+    0 0 20px #00e5ff,
+    0 0 40px #8c52ff;
+
+  transform:
+  translate(-50%, -50%);
+
+  transition:
+  transform 0.08s linear;
+}
+
+/* EFECTO CLICK */
+.cursor.click {
+  transform:
+  translate(-50%, -50%)
+  scale(1.7);
+}
+.instagram-btn {
+  background:
+  linear-gradient(
+    90deg,
+    #ff00aa,
+    #fa1313,
+    #ff9900
+  );
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.instagram-btn:hover {
+
+  background:
+  linear-gradient(
+    90deg,
+    #f046ff,
+    #ff0000,
+    #ff9924
+  );
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 20px #00e5ff;
+}
+.discord-btn {
+
+  background:
+  linear-gradient(
+    90deg,
+    #3700ff,
+    hsl(197, 100%, 51%),
+    #3700ff
+  );
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.discord-btn:hover {
+
+  background:
+  linear-gradient(
+    90deg,
+    #00bfff,
+    #1500ff,
+    #0095ff
+  );
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 20px #00e5ff;
+}
+.link {
+
+  background:
+  linear-gradient(
+    90deg,
+    #3700ff,
+    hsl(269, 100%, 51%),
+    #6200ff
+  );
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.link:hover {
+
+  background:
+  linear-gradient(
+    90deg,
+    #00bfff,
+    #1500ff,
+    #0095ff
+  );
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 20px #00e5ff;
+}
+
+.LINK {
+
+  background:
+  linear-gradient(
+    90deg,
+    #3700ff,
+    hsl(197, 100%, 51%),
+    #3700ff
+  );
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.LINK:hover {
+
+  background:
+  linear-gradient(
+    90deg,
+    #00ff62,
+    #0095ff,
+    #1e00ff
+  );
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 20px #00e5ff;
+}
