@@ -47,3 +47,21 @@ cursor.style.top =
 e.touches[0].clientY + "px";
 
 });
+
+function abrirTerminos() {
+
+document.getElementById(
+"modalTerminos"
+).style.display =
+"block";
+
+}
+
+function cerrarTerminos() {
+
+document.getElementById(
+"modalTerminos"
+).style.display =
+"none";
+
+}
