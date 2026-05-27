@@ -50,18 +50,24 @@ e.touches[0].clientY + "px";
 
 function abrirTerminos() {
 
-document.getElementById(
+document
+.getElementById(
 "modalTerminos"
-).style.display =
-"block";
+)
+.classList.add(
+"active"
+);
 
 }
 
 function cerrarTerminos() {
 
-document.getElementById(
+document
+.getElementById(
 "modalTerminos"
-).style.display =
-"none";
+)
+.classList.remove(
+"active"
+);
 
 }
