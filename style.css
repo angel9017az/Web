@@ -476,3 +476,44 @@ section {
   }
 
 }
+.gmail-btn {
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 16px 28px;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  color: white;
+
+  background:
+  linear-gradient(
+    90deg,
+    #ff4d4d,
+    #ff9800,
+    #ffd700
+  );
+
+  transition: 0.3s;
+
+  box-shadow:
+    0 0 15px
+    rgba(255,100,0,0.3);
+}
+
+.gmail-btn:hover {
+
+  transform:
+  translateY(-4px);
+
+  box-shadow:
+    0 0 25px
+    rgba(255,100,0,0.6);
+
+  filter:
+  brightness(1.1);
+}
